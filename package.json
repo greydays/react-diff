@@ -4,7 +4,7 @@
   "description": "Highlight differences between inputs",
   "main": "dist/react-diff.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel lib/react-diff.js > dist/react-diff.js"
+    "build": "./node_modules/.bin/babel lib/react-diff.js --out-file dist/react-diff.js"
   },
   "repository": {
     "type": "git",
@@ -21,10 +21,12 @@
   },
   "homepage": "https://github.com/cezary/react-diff",
   "peerDependencies": {
-    "react": ">=0.12.0"
+    "react": ">=15.4",
+    "prop-types": ">=15.5.10"
   },
   "dependencies": {
-    "diff": "^1.2.0"
+    "diff": "^1.2.0",
+    "uuid": "^3.0.1"
   },
   "devDependencies": {
     "babel": "^5.1.10"
