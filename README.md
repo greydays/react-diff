@@ -15,16 +15,14 @@ http://cezary.github.io/react-diff/
 ## Example
 
 ```javascript
-var React = require('react');
-var Diff = require('react-diff');
+import React from 'react';
+import Diff from 'react-diff';
 
-var Component = React.createClass({
-  render: function() {
-    return (
-      <Diff inputA="gogol" inputB="google" type="chars" />
-    );
-  }
-});
+const Component = () => {
+  return (
+    <Diff inputA="gogol" inputB="google" type="chars" />
+  );
+};
 ```
 
 ## License
